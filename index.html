@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/cerebroIcon.png" type="image/png">
+    <title>Jogo da Memoria</title>
+</head>
+<body>
+   <div id="gameBoard">
+   </div>
+   <div id="newGame">
+   <div>Jogo da Memoria</div>
+        <button id="newGameBtn" onclick="newGame()">Novo Jogo</button>
+   </div>
+   <div id="gameOver">
+        <div>Parabens, você completou o Jogo</div>
+        <button id="backMenu" onclick="backMenu()">Voltar ao menu</button>
+    </div>
+
+    <audio id="flipSound">
+        <source src="./assets/audio/assets_audios_CardFlipSound.mp3">
+    </audio>
+
+    <script src="./js/game.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
